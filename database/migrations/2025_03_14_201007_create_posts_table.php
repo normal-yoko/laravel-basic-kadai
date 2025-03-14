@@ -13,15 +13,12 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('content');
             $table->timestamps();
         });
     }
-    Schema::create('posts', function (Blueprint $table) {
-        $table->id();
-        $table->string('title');
-        $table->text('content');
-        $table->timestamps();
-    });
+
     /**
      * Reverse the migrations.
      */
@@ -30,4 +27,3 @@ return new class extends Migration
         Schema::dropIfExists('posts');
     }
 };
-
