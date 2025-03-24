@@ -9,7 +9,7 @@
 
 <body>
    <h1>投稿作成</h1>
-   <form action="{{ route('requests.store') }}" method="POST">
+   <form action="{{ route('posts.create') }}" method="POST">
 
        <table>
            <tr>
